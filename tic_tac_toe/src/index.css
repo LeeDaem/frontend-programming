@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&display=swap');
+@theme {
+    --font-title:"Black Han Sans"
+}

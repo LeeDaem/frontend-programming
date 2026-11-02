@@ -1,0 +1,17 @@
+.app {
+    margin: 2rem 2rem;
+}
+
+.text {
+    color: black;
+}
+
+.top-section {
+    display: flex;
+    justify-items: center;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+}
