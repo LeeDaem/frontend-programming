@@ -1,22 +1,21 @@
-import { useMemo, useState } from 'react'
-import './App.css'
-const numbers = [1, 2, 3, 4, 5];
+import { memo, useState, useCallback } from 'react';
+
+const Button = memo(({ handleClick }) => {
+  return <p onClick={handleClick}>ADD</p>;
+})
 
 function App() {
-  const [min, setMin] = useState(3);
   const [count, setCount] = useState(0);
 
-  const filtered = useMemo(() => {
-    console.log("필터 계산");
-    return numbers.filter(number => number >= min);
-
-  }, [min]);
+  console.log(`App 렌더링 - ${name}, ${count}`)
+  const handleClick = useCallback(()=>{
+    setCount(prev => prev + 1)
+  },[]);
 
   return (
     <>
-      <input type='number' value={min} onChange={e => setMin(Number(e.target.value))}/>
-      <p>결과:{filtered.join(', ' )}</p>
-      <button onClick={() => setCount(count + 1)}>클릭횟수 : {count}</button>
+      <h1>{count}</h1>
+      <Button handleClick={handleClick}/>
     </>
   )
 }
