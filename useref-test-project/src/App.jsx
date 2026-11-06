@@ -1,3 +1,4 @@
+/* 11월6일실습 */
 import { memo, useState, useCallback } from 'react';
 
 const Button = memo(({ handleClick }) => {

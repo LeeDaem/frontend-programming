@@ -1,3 +1,4 @@
+/* 11월6일실습 */
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
