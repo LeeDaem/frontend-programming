@@ -1,0 +1,115 @@
+==================================================
+
+        Vite & Git/GitHub 개발 가이드 메모
+
+==================================================
+
+
+
+[ 1. Vite 프로젝트 생성 및 개발 ]
+
+
+
+1-1. 프로젝트 생성
+
+  npm create vite@latest 프로젝트이름
+
+
+
+1-2. 터미널 선택 옵션
+
+  - Select a framework: › React
+
+  - Select a variant:   › JavaScript
+
+  - Use ESLint?:        › (필요 시 Yes / No)
+
+
+
+1-3. 프로젝트 폴더 이동 및 라이브러리 설치
+
+  cd 프로젝트이름
+
+  npm install
+
+
+
+1-4. 주요 명령어
+
+  npm run dev      # 개발 서버 실행 (화면 확인용)
+
+  npm run build    # 배포용 파일 빌드 (dist 폴더 생성)
+
+  npm run preview  # 빌드 결과물 미리보기
+
+
+
+
+
+--------------------------------------------------
+
+
+
+
+
+[ 2. GitHub 최초 연결 (새 환경 / 최초 1회) ]
+
+
+
+2-1. 사용자 정보 설정 (새 컴퓨터일 때 최초 1회)
+
+  git config --global user.name "내 깃허브 ID"
+
+  git config --global user.email "내 깃허브 이메일"
+
+
+
+2-2. 저장소 연결 및 첫 업로드
+
+  ※ 주의: 터미널 경로가 프로젝트 루트 폴더여야 함
+
+
+
+  git init
+
+  git remote add origin https://github.com/LeeDaem/frontend-programming.git
+
+  git add .
+
+  git commit -m "수정사항이나 추가한 내용"
+
+  git push -u origin master
+
+
+
+
+
+--------------------------------------------------
+
+
+
+
+
+[ 3. 데일리 Git 작업 (코드 수정 후 업데이트) ]
+
+
+
+3-1. 작업 상태 확인
+
+  git status
+
+
+
+3-2. 변경 사항 커밋 및 푸시
+
+  git add .
+
+  git commit -m "수정 내용 요약"
+
+  git push
+
+
+
+==================================================
+
+```
